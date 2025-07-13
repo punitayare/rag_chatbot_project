@@ -1,5 +1,5 @@
 import streamlit as st
-from ingest import load_and_split_documents
+from ingest import load_and_semantic_chunk
 from embed import build_or_load_vectorstore
 from groq import ask_groq, get_relevant_context
 
@@ -9,7 +9,7 @@ st.title("🤖 Internal HR Chatbot (RAG-Powered)")
 st.caption("Ask anything from your internal documents.")
 
 # Load & Prepare Documents
-chunks = load_and_split_documents("docs/text.pdf")
+chunks = load_and_semantic_chunk("docs/text.pdf")
 retriever = build_or_load_vectorstore(chunks)
 
 # User Input
