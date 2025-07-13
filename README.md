@@ -66,6 +66,7 @@ streamlit run app.py
 Visit http://localhost:8501 in your browser.
 ```
 💬 Example Questions to Try
+
 What is the leave policy mentioned in the document?
 
 How many sick leaves are allowed annually?
