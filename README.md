@@ -26,7 +26,7 @@ rag_chatbot_project/
 ├── ingest.py               # PDF loader and semantic chunker
 ├── embed.py                # Embedding + vectorstore builder
 ├── query.py                # Groq LLM querying logic
-├── .env                    # Stores GROQ_API_KEY (excluded from Git)
+├── .env                    # Stores GROQ_API_KEY 
 ├── requirements.txt        # All Python dependencies
 └── README.md               # This file
 ```
@@ -39,7 +39,7 @@ cd rag_chatbot_project
 2. Create and Activate a Virtual Environment (Optional)
 
 ## On Windows:
-'''plaintext
+```plaintext
 python -m venv venv
 venv\Scripts\activate
 ```
@@ -58,7 +58,7 @@ Create a .env file in the root folder and add your key:
 ```plaintext
 GROQ_API_KEY=your_groq_api_key_here
 ```
-🔒 Never share your .env file in public repositories!
+
 
 ▶️ Run the App Locally
 ```plaintext
