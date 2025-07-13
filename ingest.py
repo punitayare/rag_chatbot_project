@@ -1,4 +1,4 @@
- langchain.document_loaders import PyMuPDFLoader
+langchain.document_loaders import PyMuPDFLoader
 from langchain.schema import Document
 import nltk
 from sentence_transformers import SentenceTransformer
