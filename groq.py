@@ -1,5 +1,11 @@
 # query.py
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 def ask_groq(query, context, model="llama3-8b-8192"):
     prompt = f"""
@@ -14,7 +20,7 @@ You are a helpful, polite, and professional HR assistant. Answer based on the pr
 [Answer]
 """
     headers = {
-        "Authorization": "Bearer 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",
+        "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json"
     }
 
