@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 import streamlit as st
 
 # Ensure required data is downloaded
-nltk.download('punkt')
+nltk.download('punkt_tab')
 
 # Load the SentenceTransformer model
 semantic_model = SentenceTransformer('all-MiniLM-L6-v2')
