@@ -36,3 +36,8 @@ rag_chatbot_project/
 ├── requirements.txt        # Python dependencies
 └── docs/
     └── text.pdf            # Your input document(s)
+## Installation and Setup
+##Clone Repository
+```plaintext
+git clone https://github.com/punitayare/rag_chatbot_project.git
+cd rag_chatbot_project
