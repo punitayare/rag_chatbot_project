@@ -5,3 +5,4 @@ nltk
 faiss-cpu
 PyMuPDF
 requests
+langchain-community
