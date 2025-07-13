@@ -19,7 +19,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** chatbot designed to a
 
 ## 📂 Project Structure
 
-
+'''plaintext
 rag_chatbot_project/
 │
 ├── app.py                  # Streamlit UI
@@ -41,6 +41,7 @@ bash
 Copy
 Edit
 # On Windows:
+'''plaintext
 python -m venv venv
 venv\Scripts\activate
 
