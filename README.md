@@ -1,43 +1,100 @@
 # 📄 RAG Chatbot for Internal Document Question Answering
 
-This project is a **Retrieval-Augmented Generation (RAG)** chatbot designed to answer natural language queries based on internal PDF documents. It uses SentenceTransformers for embeddings, FAISS for vector storage, and the Groq API for fast and efficient LLM-powered answer generation. The UI is built with **Streamlit** for ease of use.
+This project is a **Retrieval-Augmented Generation (RAG)** chatbot designed to answer natural language queries from internal PDF documents. It combines:
+
+- Semantic chunking with **Sentence Transformers**
+- Embeddings via **BAAI/bge-base-en-v1.5**
+- **FAISS** for fast vector search
+- Fast LLM generation using the **Groq API**
+- A clean **Streamlit UI**
 
 ---
 
-## 🚀 Demo
+## 🚀 Live Demo
 
-🔗 **Live App:** [RAG Chatbot Streamlit App](https://ragchatbotprojectgit-xx4jrh9dcpqunyrrprrkx8.streamlit.app/)
-
-
----
-
-## 🧠 Features
-
-- Upload internal documents (PDFs)
-- Automatic semantic chunking using Sentence Transformers
-- Embedding with `BAAI/bge-base-en-v1.5`
-- Vector storage with **FAISS**
-- Fast responses via **Groq-hosted LLaMA 3** model
-- User-friendly interface with **Streamlit**
-- Retrieved chunk preview for transparency
+🔗 [Try the App](https://ragchatbotprojectgit-xx4jrh9dcpqunyrrprrkx8.streamlit.app/)  
+📦 [GitHub Repo](https://github.com/punitayare/rag_chatbot_project.git)
 
 ---
 
 ## 📂 Project Structure
 
-```plaintext
+
 rag_chatbot_project/
 │
-├── app.py                  # Main Streamlit UI and app logic
-├── ingest.py               # PDF loading and semantic chunking
-├── embed.py                # Embedding and vector store creation
-├── query.py                # Querying Groq LLM with context
-├── .env                    # Contains your GROQ_API_KEY (not pushed)
-├── requirements.txt        # Python dependencies
-└── docs/
-    └── text.pdf            # Your input document(s)
-## Installation and Setup
-##Clone Repository
-```plaintext
+├── app.py                  # Streamlit UI
+├── ingest.py               # PDF loader and semantic chunker
+├── embed.py                # Embedding + vectorstore builder
+├── query.py                # Groq LLM querying logic
+├── .env                    # Stores GROQ_API_KEY (excluded from Git)
+├── requirements.txt        # All Python dependencies
+└── README.md               # This file
+##⚙️ Installation & Setup
+1. Clone the Repository
+bash
+Copy
+Edit
 git clone https://github.com/punitayare/rag_chatbot_project.git
 cd rag_chatbot_project
+2. Create and Activate a Virtual Environment (Optional)
+bash
+Copy
+Edit
+# On Windows:
+python -m venv venv
+venv\Scripts\activate
+
+# On macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
+3. Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4. Add Your Groq API Key
+Create a .env file in the root folder and add your key:
+
+bash
+Copy
+Edit
+touch .env
+Inside .env, paste:
+
+env
+Copy
+Edit
+GROQ_API_KEY=your_groq_api_key_here
+🔒 Never share your .env file in public repositories!
+
+▶️ Run the App Locally
+
+streamlit run app.py
+Visit http://localhost:8501 in your browser.
+
+💬 Example Questions to Try
+What is the leave policy mentioned in the document?
+
+How many sick leaves are allowed annually?
+
+What are the disciplinary actions listed?
+
+✅ Requirements
+Python 3.9+
+
+streamlit
+
+langchain
+
+sentence-transformers
+
+transformers
+
+faiss-cpu
+
+pymupdf
+
+python-dotenv
+
+requests
+
