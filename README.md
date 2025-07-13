@@ -19,7 +19,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** chatbot designed to a
 
 ## 📂 Project Structure
 
-'''plaintext
+```plaintext
 rag_chatbot_project/
 │
 ├── app.py                  # Streamlit UI
@@ -29,6 +29,7 @@ rag_chatbot_project/
 ├── .env                    # Stores GROQ_API_KEY (excluded from Git)
 ├── requirements.txt        # All Python dependencies
 └── README.md               # This file
+
 ##⚙️ Installation & Setup
 1. Clone the Repository
 bash
