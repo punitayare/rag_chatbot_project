@@ -30,50 +30,41 @@ rag_chatbot_project/
 ├── requirements.txt        # All Python dependencies
 └── README.md               # This file
 ```
-##⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 1. Clone the Repository
-bash
-Copy
-Edit
+```plaintext
 git clone https://github.com/punitayare/rag_chatbot_project.git
 cd rag_chatbot_project
+```
 2. Create and Activate a Virtual Environment (Optional)
-bash
-Copy
-Edit
-# On Windows:
+
+## On Windows:
 '''plaintext
 python -m venv venv
 venv\Scripts\activate
+```
 
-# On macOS/Linux:
+## On macOS/Linux:
+```plaintext
 python3 -m venv venv
 source venv/bin/activate
+```
 3. Install Dependencies
-bash
-Copy
-Edit
+```plaintext
 pip install -r requirements.txt
+```
 4. Add Your Groq API Key
 Create a .env file in the root folder and add your key:
-
-bash
-Copy
-Edit
-touch .env
-Inside .env, paste:
-
-env
-Copy
-Edit
+```plaintext
 GROQ_API_KEY=your_groq_api_key_here
+```
 🔒 Never share your .env file in public repositories!
 
 ▶️ Run the App Locally
-
+```plaintext
 streamlit run app.py
 Visit http://localhost:8501 in your browser.
-
+```
 💬 Example Questions to Try
 What is the leave policy mentioned in the document?
 
@@ -82,6 +73,7 @@ How many sick leaves are allowed annually?
 What are the disciplinary actions listed?
 
 ✅ Requirements
+```plaintext
 Python 3.9+
 
 streamlit
@@ -99,4 +91,4 @@ pymupdf
 python-dotenv
 
 requests
-
+```
